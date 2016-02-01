@@ -22,8 +22,7 @@
   },
   "scripts": {
     "lint": "standard --verbose | snazzy",
-    "pretest": "npm run lint",
-    "test": "testem .",
+    "test": "npm run lint",
     "preversion:patch": "npm run test",
     "version:patch": "xyz -i patch",
     "preversion:minor": "npm run test",
