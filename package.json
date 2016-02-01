@@ -1,0 +1,53 @@
+{
+  "name": "pg-database-url",
+  "description": "Build a database url from a config object",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mediasuitenz/pg-database-url.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mediasuitenz/pg-database-url/issues"
+  },
+  "homepage": "https://github.com/mediasuitenz/pg-database-url",
+  "author": {
+    "name": "Mark Stuart",
+    "email": "mstuart_is@me.com",
+    "url": "https://mediasuite.co.nz"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "pretest": "npm run lint",
+    "test": "testem .",
+    "preversion:patch": "npm run test",
+    "version:patch": "xyz -i patch",
+    "preversion:minor": "npm run test",
+    "version:minor": "xyz -i minor",
+    "preversion:major": "npm run test",
+    "version:major": "xyz -i major"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "keywords": [
+    "postgres",
+    "pg",
+    "database",
+    "url",
+    "connection string"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "snazzy": "^2.0.1",
+    "standard": "^5.4.1",
+    "xyz": "^0.5.0"
+  },
+  "peerDependencies": {}
+}
