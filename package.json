@@ -1,7 +1,7 @@
 {
   "name": "pg-database-url",
   "description": "Build a database url from a config object",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {
