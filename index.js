@@ -19,7 +19,7 @@ module.exports = function (config) {
     config.username,
     config.password ? (':' + config.password) : '',
     '@',
-    config.host,
+    config.host || 'localhost',
     ':',
     config.port || 5432,
     '/',
